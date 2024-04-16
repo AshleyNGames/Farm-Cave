@@ -1,0 +1,31 @@
+{ 	"Format": "2.0.0",
+	
+ "ConfigSchema": 	
+	 { "Cave" : {"AllowValues": "Default, Dark, Desert, Dino",	"Default": "Default"}, },
+	
+"Changes": [  
+	  
+{"Action": "EditMap",
+     "Target": "Maps/FarmCave",
+     "FromFile": "Assets/FarmCave{{Cave}}.tmx", 
+     "PatchMode": "Replace"},
+
+{"Action": "EditMap",
+    "Target": "Maps/FarmCave",
+      "MapProperties": {"Warp": "15 21 Farm 34 6", "CanCaskHere": "T"}},
+
+{  "Action": "EditMap",
+    "Target": "Maps/Farm, Maps/Farm_Combat, Maps/Farm_Mining, Maps/Farm_Foraging, Maps/Farm_Fishing",
+            "AddWarps": ["34 5 FarmCave 15 20"]},
+
+{  "Action": "EditMap",
+    "Target": "Maps/Farm_Ranching",
+      "AddWarps": ["88 54 FarmCave 15 20"]},
+
+{  "Action": "EditMap",
+    "Target": "Maps/Farm_Island",
+      "AddWarps": ["34 15 FarmCave 15 20"]},
+
+{  "Action": "EditMap",
+    "Target": "Maps/Farm_FourCorners",
+      "AddWarps": ["30 35 FarmCave 15 20"]}]}

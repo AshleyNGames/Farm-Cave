@@ -1,0 +1,10 @@
+{
+  "Name": "Xiddav's Farm Cave",
+  "Author": "Xiddav",
+  "Version": "1.0.1",
+  "Description": "I edited the Farm Cave to my likeing.",
+  "UniqueID": "Xiddav.FarmCave",	
+  "MinimumApiVersion": "3.0",
+  "UpdateKeys": [ "Nexus:22259" ],
+  "ContentPackFor": {  "UniqueID": "Pathoschild.ContentPatcher",   },    
+}
